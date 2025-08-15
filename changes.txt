@@ -22,3 +22,14 @@ Completed the capability challenge by implementing a simple workshop system.
 - **`add_lesson`**: An entry function that allows the holder of a `WorkshopCapability` to add a lesson to a `Workshop`.
 
 The code was also cleaned up to remove unnecessary `use` statements, resulting in a clean build with no warnings.
+
+---
+
+## Data Types Challenge
+
+Completed the data types challenge by creating a `Developer` struct to demonstrate the use of various data types.
+
+- **`Developer`**: A struct containing fields for `name` (String), `age` (u8), `is_coder` (bool), and `lessons` (vector<String>).
+- **`create_developer`**: An entry function that initializes a `Developer` object with sample data and transfers it to the user.
+
+This approach provides a more structured and practical example of using data types in Move. The code was also cleaned up to remove unnecessary `use` statements, resulting in a clean build with no warnings.
