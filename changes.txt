@@ -1,3 +1,5 @@
+## Build Challenge
+
 Fixed the build error in the `build` package.
 
 The main issue was a missing dependency on the `capability` module and an incorrect type definition in the `build.move` file.
@@ -7,3 +9,16 @@ To fix this, I:
 2. Corrected the type of the `capability` parameter in the `init_with_capability` function in `build/sources/build.move`.
 3. Fixed the `capability` module itself, which had a commented-out module declaration and an incomplete `WorkshopCapability` struct.
 4. Addressed compiler warnings related to unused mutable references.
+
+---
+
+## Capability Challenge
+
+Completed the capability challenge by implementing a simple workshop system.
+
+- **`WorkshopCapability`**: A struct representing the permission to modify a workshop.
+- **`Workshop`**: A struct that holds the workshop's lessons in a vector.
+- **`create_workshop`**: An entry function to create a new `Workshop` object.
+- **`add_lesson`**: An entry function that allows the holder of a `WorkshopCapability` to add a lesson to a `Workshop`.
+
+The code was also cleaned up to remove unnecessary `use` statements, resulting in a clean build with no warnings.
