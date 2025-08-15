@@ -44,3 +44,15 @@ Completed the first smart contract challenge by creating a simple Move module th
 - **`create`**: An entry function that initializes a `MyObject` with a value of 42 and transfers it to the user.
 
 This provides a basic "hello world" example of a Sui smart contract. The code was also cleaned up to remove unnecessary `use` statements, resulting in a clean build with no warnings.
+
+---
+
+## Functions Challenge
+
+Completed the functions challenge by implementing three simple functions:
+
+- **`sum`**: Takes two `u64` numbers and returns their sum.
+- **`say_hello`**: Returns the string "Hi".
+- **`is_odd`**: Takes a `u64` number and returns `true` if it's odd, `false` otherwise.
+
+A test function was also included to verify the correctness of these functions.
