@@ -99,3 +99,11 @@ Completed the testing challenge by implementing `sum` and `compare` functions an
 - **`sum`**: Adds two `u64` numbers.
 - **`compare`**: Checks two `u64` numbers for equality.
 - **Unit Tests**: Wrote multiple tests, including a `#[expected_failure]` test, to ensure the functions behave as expected under different conditions.
+
+---
+
+## Time Usage Challenge
+
+Completed the time usage challenge by implementing a `compare` function.
+
+- **`compare`**: Takes a `Clock` object and a `TxContext` and returns `true` if the clock's timestamp is greater than or equal to the epoch's start timestamp.
