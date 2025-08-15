@@ -1,3 +1,9 @@
+# Sui Move Workshop: Challenge Solutions
+
+This document provides a high-level overview of the solutions for each challenge in the Sui Move workshop. Each section corresponds to a directory in the project.
+
+---
+
 ## Build Challenge
 
 Fixed the build error in the `build` package.
