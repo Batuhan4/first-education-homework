@@ -79,3 +79,13 @@ Completed the test coin challenge by creating a module that defines a new curren
 - **`init`**: The module initializer that creates the currency and transfers the `TreasuryCap` and `CoinMetadata` to the publisher, allowing them to mint new coins.
 
 This solution follows the variable-supply coin pattern, as indicated by the reference solution.
+
+---
+
+## Test NFT Challenge
+
+Completed the test NFT challenge by implementing a robust NFT module.
+
+- **`WorkshopNFT`**: The main NFT struct, which includes a `creator` field to track the original minter.
+- **Creator-Only Actions**: The `update_description` and `burn` functions are restricted to the NFT's original creator, adding a layer of security.
+- **Full Lifecycle**: The module includes functions for minting, transferring, updating, and burning the NFT.
