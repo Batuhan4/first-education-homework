@@ -116,3 +116,15 @@ Completed the transaction context challenge by implementing a function that util
 
 - **`TimestampObject`**: A struct to store a `u64` timestamp.
 - **`create_timestamp_object`**: An entry function that gets the current epoch's start time in milliseconds from the `TxContext`, creates a `TimestampObject` with it, and transfers it to the sender.
+
+---
+
+## Visibility Challenge
+
+Completed the visibility challenge by demonstrating the three types of function visibility in Move.
+
+- **Private Function**: An `increment_internal` function that can only be called from within the same module.
+- **Public Function**: A `get_value` function that can be called by other modules.
+- **Entry Function**: A `create_and_increment` function that can be called directly as a transaction.
+
+A test was included to verify the internal and public functions.
