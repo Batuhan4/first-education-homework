@@ -3,6 +3,11 @@ module test_nft::test_nft {
     use sui::event;
     use sui::url::{Self, Url};
 
+    // Error codes
+    const ENotCreator: u64 = 0;
+    const EEmptyName: u64 = 1;
+    const EEmptyDescription: u64 = 2;
+
     /// The main NFT struct for the workshop.
     public struct WorkshopNFT has key, store {
         id: UID,
@@ -35,6 +40,10 @@ module test_nft::test_nft {
         url: vector<u8>,
         ctx: &mut TxContext,
     ) {
+        // Input validation
+        assert!(!vector::is_empty(&name), EEmptyName);
+        assert!(!vector::is_empty(&description), EEmptyDescription);
+        
         let sender = ctx.sender();
         let nft = WorkshopNFT {
             id: object::new(ctx),
@@ -64,13 +73,14 @@ module test_nft::test_nft {
         new_description: vector<u8>,
         ctx: &mut TxContext,
     ) {
-        assert!(nft.creator == ctx.sender(), 0); // ENotCreator
+        assert!(nft.creator == ctx.sender(), ENotCreator);
+        assert!(!vector::is_empty(&new_description), EEmptyDescription);
         nft.description = string::utf8(new_description);
     }
 
     /// Burn the NFT. Only the original creator can do this.
     public entry fun burn(nft: WorkshopNFT, ctx: &mut TxContext) {
-        assert!(nft.creator == ctx.sender(), 0); // ENotCreator
+        assert!(nft.creator == ctx.sender(), ENotCreator);
         let WorkshopNFT { id, name: _, description: _, url: _, creator: _ } = nft;
         object::delete(id);
     }
