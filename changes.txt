@@ -1,0 +1,9 @@
+Fixed the build error in the `build` package.
+
+The main issue was a missing dependency on the `capability` module and an incorrect type definition in the `build.move` file.
+
+To fix this, I:
+1. Added a dependency on the `capability` module in `build/Move.toml`.
+2. Corrected the type of the `capability` parameter in the `init_with_capability` function in `build/sources/build.move`.
+3. Fixed the `capability` module itself, which had a commented-out module declaration and an incomplete `WorkshopCapability` struct.
+4. Addressed compiler warnings related to unused mutable references.

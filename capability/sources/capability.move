@@ -1,10 +1,16 @@
-/*
-/// Module: capability
-module capability::capability;
-*/
+module capability::capability {
+    use sui::object::{Self, UID};
+    use sui::transfer;
+    use sui::tx_context::{Self, TxContext};
 
-// For Move coding conventions, see
-// https://docs.sui.io/concepts/sui-move-concepts/conventions
+    /// Capability struct
+    public struct WorkshopCapability has key, store {
+        id: UID
+    }
 
-//Workshop Capability
-// This module provides a capability to access the functions module.
+    fun init(ctx: &mut TxContext) {
+        transfer::transfer(WorkshopCapability {
+            id: object::new(ctx)
+        }, ctx.sender())
+    }
+}
