@@ -33,3 +33,14 @@ Completed the data types challenge by creating a `Developer` struct to demonstra
 - **`create_developer`**: An entry function that initializes a `Developer` object with sample data and transfers it to the user.
 
 This approach provides a more structured and practical example of using data types in Move. The code was also cleaned up to remove unnecessary `use` statements, resulting in a clean build with no warnings.
+
+---
+
+## First Smart Contract Challenge
+
+Completed the first smart contract challenge by creating a simple Move module that defines a `MyObject` struct and an entry function to create and transfer it.
+
+- **`MyObject`**: A simple struct with a `u64` value.
+- **`create`**: An entry function that initializes a `MyObject` with a value of 42 and transfers it to the user.
+
+This provides a basic "hello world" example of a Sui smart contract. The code was also cleaned up to remove unnecessary `use` statements, resulting in a clean build with no warnings.
