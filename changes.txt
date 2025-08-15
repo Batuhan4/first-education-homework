@@ -56,3 +56,15 @@ Completed the functions challenge by implementing three simple functions:
 - **`is_odd`**: Takes a `u64` number and returns `true` if it's odd, `false` otherwise.
 
 A test function was also included to verify the correctness of these functions.
+
+---
+
+## Ownership Challenge
+
+Completed the ownership challenge by demonstrating three different ownership patterns in Sui:
+
+- **`OwnedObject`**: A simple object that is owned by a specific address.
+- **`SharedObject`**: An object that is shared and can be accessed by anyone.
+- **`ImmutableObject`**: An object that cannot be modified after its creation.
+
+Entry functions were created for each type to demonstrate how they are created and transferred or shared.
