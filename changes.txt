@@ -107,3 +107,12 @@ Completed the testing challenge by implementing `sum` and `compare` functions an
 Completed the time usage challenge by implementing a `compare` function.
 
 - **`compare`**: Takes a `Clock` object and a `TxContext` and returns `true` if the clock's timestamp is greater than or equal to the epoch's start timestamp.
+
+---
+
+## Transaction Context Challenge
+
+Completed the transaction context challenge by implementing a function that utilizes the `TxContext`.
+
+- **`TimestampObject`**: A struct to store a `u64` timestamp.
+- **`create_timestamp_object`**: An entry function that gets the current epoch's start time in milliseconds from the `TxContext`, creates a `TimestampObject` with it, and transfers it to the sender.
