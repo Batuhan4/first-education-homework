@@ -89,3 +89,13 @@ Completed the test NFT challenge by implementing a robust NFT module.
 - **`WorkshopNFT`**: The main NFT struct, which includes a `creator` field to track the original minter.
 - **Creator-Only Actions**: The `update_description` and `burn` functions are restricted to the NFT's original creator, adding a layer of security.
 - **Full Lifecycle**: The module includes functions for minting, transferring, updating, and burning the NFT.
+
+---
+
+## Testing Challenge
+
+Completed the testing challenge by implementing `sum` and `compare` functions and writing unit tests to verify their correctness.
+
+- **`sum`**: Adds two `u64` numbers.
+- **`compare`**: Checks two `u64` numbers for equality.
+- **Unit Tests**: Wrote multiple tests, including a `#[expected_failure]` test, to ensure the functions behave as expected under different conditions.
