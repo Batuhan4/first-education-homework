@@ -47,7 +47,7 @@ This approach provides a more structured and practical example of using data typ
 Completed the first smart contract challenge by creating a simple Move module that defines a `MyObject` struct and an entry function to create and transfer it.
 
 - **`MyObject`**: A simple struct with a `u64` value.
-- **`create`**: An entry function that initializes a `MyObejct` with a value of 42 and transfers it to the user.
+- **`create`**: An entry function that initializes a `MyObject` with a value of 42 and transfers it to the user.
 
 This provides a basic "hello world" example of a Sui smart contract. The code was also cleaned up to remove unnecessary `use` statements, resulting in a clean build with no warnings.
 

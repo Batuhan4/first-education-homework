@@ -26,6 +26,7 @@ module capability::capability {
         vector::push_back(&mut workshop.lessons, lesson);
     }
 
+    #[init]
     fun init(ctx: &mut TxContext) {
         transfer::transfer(WorkshopCapability {
             id: object::new(ctx)
